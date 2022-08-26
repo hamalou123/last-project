@@ -1,0 +1,194 @@
+.search{
+    margin-left: 1150px;
+}
+
+.image{
+margin: 0px auto;
+width: 500px;
+height: 500px;
+
+
+}
+.logoshop img{
+  width: 50px;
+}
+.text10{
+width: 300px;
+text-align: center;
+margin:  0px auto;
+}
+.logoaccueil img{
+  width: 50px;
+  height: 50px;
+}
+.logobibli{
+  width: 50px;
+  height: 50px;
+}
+body {
+    background-color:white;
+    margin: 0;
+  }
+.v {
+width: 100px;
+height: 150px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+.gaming{
+    width: 100px;
+height: 100px;
+}
+* {box-sizing: border-box}
+h1{
+text-align: center;
+}
+.para{
+text-align: center;
+
+}
+.panier1{
+ 
+}
+.acc{
+ 
+}
+.image{
+margin-left: 450px;
+}
+.presentation{
+width: 300px;
+height: 300px;
+margin: auto;
+}
+.ahmed2{
+  text-align: center;
+margin: 0 auto;
+width: 300px;
+height: 300px;
+}
+.logoshop{
+margin-left: 600px;
+}
+.logobibli{
+  width: 50px;
+  margin-left: 250px;
+}
+.logoaccueil{
+  width: 50px;
+  margin-left: 150px;
+}
+.tex{
+text-align: center;
+width: 300px;
+height: 300px;
+
+
+}
+.stumble{
+width: 300px;
+height: 300px;
+}
+.text2{
+float: left;
+}
+.text10{
+float: left;
+}
+
+.from{
+margin-left: 1120px;
+}
+.container {
+  padding: 16px;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+#myInput {
+    background-image: url('/css/searchicon.png'); 
+    background-position: 10px 12px;
+    background-repeat: no-repeat; 
+    width: 100%; 
+    font-size: 16px; 
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; 
+  }
+  

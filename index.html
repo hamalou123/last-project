@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+      <link rel="stylesheet" href="style.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <title>game world</title>
+  </head>
+  <body>
+    <header>
+      <a
+      href="index2.html"
+    crating account
+    register="index2.html"
+    >
+    register  </a    
+    >
+    <a href="shop.html"><img class="logo shop" src="data:image/png;base64,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" ></a>
+    <a href="index.html"><img class="logoaccueil" src="https://png.pngtree.com/png-vector/20190129/ourlarge/pngtree-home-icon-graphic-design-template-vector-png-image_358126.jpg" ></a>
+    <a href="panier.html"><img class="logoshop" src="https://img.freepik.com/vecteurs-premium/modele-conception-logo-vectoriel-panier-achat-ligne_591497-222.jpg?w=50"><a>
+      <a href="biblioteque.html" ><img class="logobibli" src="https://img.freepik.com/vecteurs-premium/icone-manette-jeu-pour-jouer-jeu-video-arcade-pour-joueur-design-personnalise_185390-205.jpg"></a>
+      <form id="form">
+        <input type="text" id="search" class="search" placeholder="Search">
+      </form>
+    </header>
+    <main id="main"></main>
+    <form action="action_page.php">
+      <div class="container">
+ 
+
+    <h1 class="para">hi it is the game world</h1>
+    <img
+      class="image"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgr3NA4ViVnqpaZIfTxXK9M6J1qGunI80ROrW9AK34Ww&s"
+    />
+    <p class ="presentation"> hi this is Ahmed ben hadj yahia the creator to the web scite game world  i would to show you the best free games  and the best  not free games thank you
+    </p>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E
+
+<div class="card">
+  <img src="https://www.geekjunior.fr/wp-content/uploads/2021/01/538943.jpg" alt="ahmed" style="width:100%">
+  <h1>ahmed</h1>
+  <p class="title">institution game</p>
+  <p>i m a devlopper game scite web</p>
+  <a href="https://twitter.com/AhmedBenhadjya1"><i class="fa fa-twitter"></i><img src="https://image.shutterstock.com/image-photo/image-260nw-275817101.jpg" ></a>
+  <a href="https://discord.com/channels/@me"><i class="discord"></i><img src="https://seeklogo.com/images/D/discord-color-logo-E5E6DFEF80-seeklogo.com.png" ></a>
+  <a href="https://www.tiktok.com/@zoro123bsfortnite1"><i class="tictoc"><i class="tiktok"></i><img src="https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png" ></a>" ></a>
+  <p><button>Contact</button></p>
+</div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://lh3.googleusercontent.com/WebglHOYlW-2P7ADP9oUSSrgy12PHyAE6GP_jmJkQOZZ1XH7Pa_7216EK2qS7iJFvncqOaDjg40BrYdzPbB9qNwn" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn2.unrealengine.com/21br-metaimage-lineup-1920x1080-44acd5f27136.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="https://image.jeuxvideo.com/medias/159491/1594913008-8937-jaquette-avant.jpg" class="d-block w-100" alt="">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ 
+  
+  
+    
+    <a
+      href="accueill.html"
+     soldes
+      soldes d ete=""
+    >
+      les nouvelles</a
+    >
+
+    src="<iframe width="560" height="315" src="https://www.youtube.com/embed/cpP-fCo8Dn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
+ 
+    <div class="fifa30">
+    
+    <p>fifa 23 link telechargement crack</p>
+    <img class="fifa-23"
+      src="https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/shared-assets/images/fifa-23-featured-image.png.adapt.crop191x100.1200w.png"
+     
+    />
+   
+    <div class="card text-bg-info mb-3 ahmed2">
+      <div class="card-header">fifa 23</div>
+      <div class="card-body">
+        <p>>30 ème édition de la série, FIFA 2023 est toujours édité par EA Sports et
+          développé par EA Vancouver. Disponible sur ordinateurs et consoles old gen
+          et next gen, la simulation de football, succédant à FIFA 2022, se veut
+          aussi réaliste que possible en apportant son lot de nouveautés. EA Sports
+          FC, en accord avec la FIFA, possède l’exclusivité des 700 équipes, 100
+          stades et 30 ligues à travers le monde. Cet opus enrichit l’univers du
+          football, avec un jeu cross play et une édition standard ou ultimate. Le
+          multijoueur est inclus et plusieurs modes sont intégrés : le mode
+          Carrière, le VOLTA FOOTBALL et le Clubs Pro</p>
+          <a class="fifo"
+      href="https://steamcrackedgames.com/games/2712"
+      fifa
+      23
+      download="https://skidrowtorrents.com/fifa-23-torrent-download-pc-game/"
+    >
+      fifa 23 download</a
+    >
+      </div>
+    </div>
+    
+ 
+
+    
+  </div>
+  <div class="box">
+    <p>stumble guys download</p>
+    <img class="stumble"
+      src="https://encdn.ldmnq.com/ldstore/G3ikmX-1654669438413.png"
+      
+    />
+    <h4 class="text2" > Stumble Guys is an online battle royale party game! Race with up to 32
+      players online dashing through chaotic obstacle courses. 17 unique
+      obstacle courses Battle Royale Online multiplayer Party mode to play with
+      friends Physics-based havoc Colourful, whacky design Unlockable outfits
+      and emotes Tons of hilarious fails! Get Stumble Guys now and join the fun!</h4>
+    <a href="https://store.steampowered.com/app/1677740/Stumble_Guys/">
+      stumble guys download</a>
+      <iframe
+      src="https://store.steampowered.com/widget/1677740/"
+      frameborder="0"
+      width="646"
+      height="190"
+    ></iframe>
+    </div>
+<div class="gta50">
+    <p>gt5 link gratuit</p>
+    
+    
+    
+    <div class="card" style="width: 18rem">
+      <img
+        class="card-img-top"
+        src="https://tn.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/34/4185/1.jpg?0248"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">gt5 disk for pc</h5>
+        <p class="card-text">price 125 $</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  
+    >" src="<iframe
+      width="770"
+      height="433"
+      src="https://www.youtube.com/embed/hvoD7ehZPcM"
+      title="Grand Theft Auto V: The Official Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe
+    >"
+    <h4 class="text10"
+    > Télécharger GTA 5 gratuit a eu beaucoup de premières différentes et pour
+    être honnête, beaucoup de jeu vidéo gens étaient epic games store fous de
+    Rockstar Games, les créateurs epic games. Il existe de nombreuses raisons
+    de jouer gratuitement à GTA 5 télécharger gratuit version pc jusqu’au 21
+    mai. Il se déroule dans une immense ville, pour sa part, remplie de
+    nombreuses distractions et d’automobiles à rire. Et le gameplay mai 2020
+    de base, de l’utilisation au l’epic games store, semble plus élevé que
+    dans n’importe quel jeu gratuitprécédent de la collection e mail. Mais la
+    partie grand theft auto v online qualité n’est peut-être que le conte.</h4>
+
+   
+    <a href="https://gta-5.fr.malavida.com/windows/#gref"><img class="logotelechargement" src="https://jeuxx-gratuit.fr/wp-content/uploads/2015/04/telecharger-button.png" ></a>
+
+  </div>
+    <h2>avoir des v buxs dans fortnite</h2>
+    src="
+    <blockquote
+      class="tiktok-embed"
+      cite="https://www.tiktok.com/@zoro123bsfortnite1"
+      data-unique-id="zoro123bsfortnite1"
+      data-embed-type="creator"
+      style="max-width: 720px; min-width: 288px"
+    >
+      <section>
+        <a
+          target="_blank"
+          href="https://www.tiktok.com/@zoro123bsfortnite1?refer=creator_embed"
+          >@zoro123bsfortnite1</a
+        >
+      </section>
+    </blockquote>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    "
+    <h3>n oubliez pas Ahmed Ben hadj yahia in youtube</h3>
+    <img
+      class="gaming"
+      src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?cs=srgb&dl=pexels-lucie-liz-3165335.jpg&fm=jpg"
+    />
+    
+    <h3>
+      abonnez vous a ma chaines en enfain les 5000 milles abonnes je donners
+      pack 1000 v buxs aux 5 premiers qui demendent apres le but des abonnes
+    </h3>
+    <img
+      class="v"
+      src="https://amazing.tn/wp-content/uploads/2020/12/1000vbuck-8dollars.jpg"
+    />
+    <h3>
+      enfain les 15000 milles abonnes je donners pack 2800 v buxs au 8 premiers
+      qui demendent apres le but des abonnes
+    </h3>
+    <img
+      class="v"
+      src="https://amazing.tn/wp-content/uploads/2020/12/2800vbuck-25dollars.jpg"
+    />
+    <h3>
+      enfain les 100000 milles abonnes je donners pack 5000 v buxs au dix
+      premiers qui demendent apres le but des abonnes
+    </h3>
+    <img
+      class="v"
+      src="https://m.media-amazon.com/images/I/71uDPnsT5aL._SL1500_.jpg"
+    />
+    <h3>
+      enfain les 1million abonnes je donners pack 13 500 v buxs au 20 premiers
+      qui demendent apres le but des abonnes
+    </h3>
+
+    <p>
+      <label
+        >Name
+        <input type="text" name="customer_name" required />
+      </label>
+    </p>
+
+    <p>
+      <label
+        >name fortnite or epic games
+        <input type="tel" name="epic games" />
+      </label>
+    </p>
+
+    <p>
+      <label
+        >Email
+        <input type="email" name="email_address" />
+      </label>
+    </p>
+    <p><button>Submit Booking</button></p>
+    <script src="index.js"></script>
+  <p>my name is hamalou in epic games</p>
+  </body>
+</html>
